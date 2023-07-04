@@ -26,6 +26,6 @@ export default async function getData(): Promise<Payment[]> {
         ];
   
         resolve(data);
-      }, 2000); // Delay of 2 seconds (2000 milliseconds)
+      }, 500); // Delay of 2 seconds (2000 milliseconds)
     });
   }
