@@ -1,4 +1,4 @@
-import { Payment } from "@/app/payment/columns";
+import { Payment } from "@/app/payment/components/columns";
 
 export default async function getData(): Promise<Payment[]> {
     return new Promise<Payment[]>((resolve) => {

@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { Payment, columns } from "./columns";
+import { Payment, columns } from "./components/columns";
 import { DataTable } from "./data-table";
 import getData from "@/lib/mock-data";
 
