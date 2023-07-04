@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 import { Payment, columns } from "./components/columns";
-import { DataTable } from "./data-table";
+import { DataTable } from "./components/data-table";
 import getData from "@/lib/mock-data";
 
 export default async function DemoPage() {
