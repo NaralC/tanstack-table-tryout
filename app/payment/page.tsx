@@ -1,9 +1,17 @@
+import { Suspense } from "react";
+import { Payment, columns } from "./columns";
 import { DataTable } from "./data-table";
+import getData from "@/lib/mock-data";
 
-export default function Payment() {
+export default async function DemoPage() {
+  const data = await getData();
+
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen p-24">
-      <DataTable columns={[]} data={[]} />
-    </main>
+    <div className="flex flex-col items-center justify-center min-h-screen p-24">
+      {/* Suspense works if we fetch data inside DataTable */}
+      {/* <Suspense fallback={<div>Loading table...</div>}>  */}
+      <DataTable columns={columns} data={data} />
+      {/* </Suspense> */}
+    </div>
   );
 }
